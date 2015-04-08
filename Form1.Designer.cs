@@ -96,6 +96,7 @@
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(1165, 562);
             this.listBox.TabIndex = 14;
+            this.listBox.DoubleClick += new System.EventHandler(this.listBox_DoubleClick);
             // 
             // textBox_year
             // 

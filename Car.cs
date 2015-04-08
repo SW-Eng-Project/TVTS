@@ -11,7 +11,7 @@ namespace TVTS
   
         public string Make { get; set; }
         public string Model { get; set; }
-        public string Premium { get; set; }
+        public int Pack { get; set; }
         public int Year { get; set; }
         public bool IsSold { get; set; }
         public string Interior { get; set; }
@@ -20,7 +20,17 @@ namespace TVTS
         public string Safety { get; set; }
         public string Warranty { get; set; }
         public int Price { get; set; }
-        public List<Maintenance> Maintenances;
+        public string Buyer { get; set; }
+        public int Odometer { get; set; }
+        public DateTime DateTimeSale { get; set; }
+        public IDictionary<string, object> Maintenance { get; set; }
+
+        enum Package
+        {
+            Base,
+            Premium,
+            Sport
+        };
 
         public Car(string[] line)
         {
@@ -29,22 +39,20 @@ namespace TVTS
             //
             Make = line[0];
             Model = line[1];
-            Premium = line[2];
+            Pack = int.Parse(line[2]);
             Year = int.Parse(line[3]);
             IsSold = Boolean.Parse(line[4]);
             Interior = line[5];
             Exterior = line[6];
-            Performance = line[7];
-            Safety = line[8];
-            Warranty = line[9];
-            Price = int.Parse(line[10]);
-            Maintenances = new List<Maintenance>();
+            Warranty = line[7];
+            Price = int.Parse(line[8]);
+            Buyer = line[9];
+            Odometer = int.Parse(line[10]);
+
+
+            
         }
 
-        public void AddMaintenance(Maintenance item)
-        {
-            Maintenances.Add(item);
-        }
     }
 
     

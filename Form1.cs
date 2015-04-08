@@ -33,7 +33,7 @@ namespace TVTS
 
         }
 
-        //Needs to pop up new form or label to enter new data for a new car
+        //Needs to pop up new form or panel to enter new data for a new car
         //do we need a batch entry option?
         private void btn_addCar_Click(object sender, EventArgs e)
         {
@@ -55,6 +55,17 @@ namespace TVTS
             int year = Convert.ToInt32(tb_ownYear.Text);
 
             inventory.searchCar(make, model, year, true, listBox_Owned);
+        }
+
+        //private void listBox_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    MessageBox.Show("blah blah line is selected");
+
+        //}
+
+        private void listBox_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("blah blah line is selected");
         }
 
 

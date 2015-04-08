@@ -1,0 +1,13 @@
+C:\Users\Jamie\Documents\GitHub\TVTS\bin\Debug\TVTS.exe.config
+C:\Users\Jamie\Documents\GitHub\TVTS\obj\Debug\TVTS.csprojResolveAssemblyReference.cache
+C:\Users\Jamie\Documents\GitHub\TVTS\obj\Debug\TVTS.TVTS.resources
+C:\Users\Jamie\Documents\GitHub\TVTS\obj\Debug\TVTS.Properties.Resources.resources
+C:\Users\Jamie\Documents\GitHub\TVTS\obj\Debug\TVTS.csproj.GenerateResource.Cache
+C:\Users\Jamie\Documents\GitHub\TVTS\bin\Debug\TVTS.exe
+C:\Users\Jamie\Documents\GitHub\TVTS\bin\Debug\TVTS.pdb
+C:\Users\Jamie\Documents\GitHub\TVTS\bin\Debug\Parse.dll
+C:\Users\Jamie\Documents\GitHub\TVTS\bin\Debug\Parse.NetFx45.dll
+C:\Users\Jamie\Documents\GitHub\TVTS\bin\Debug\Parse.xml
+C:\Users\Jamie\Documents\GitHub\TVTS\bin\Debug\Parse.NetFx45.xml
+C:\Users\Jamie\Documents\GitHub\TVTS\obj\Debug\TVTS.exe
+C:\Users\Jamie\Documents\GitHub\TVTS\obj\Debug\TVTS.pdb

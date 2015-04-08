@@ -16,7 +16,7 @@ namespace TVTS
             ParseObject newCar = new ParseObject("car");
             newCar["make"] = car.Make;
             newCar["model"] = car.Model;
-            newCar["premium"] = car.Premium;
+            newCar["package"] = car.Pack;
             newCar["year"] = car.Year;
             newCar["isSold"] = car.IsSold;
             newCar["interior"] = car.Interior;
@@ -61,24 +61,6 @@ namespace TVTS
 
                 showResults(carResults, listBox);
             }
-            //foreach (var result in carResults)
-            //{
-            //    var result_make = result.Get<String>("make");
-            //    var result_model = result.Get<String>("model");
-            //    var result_year = result.Get<Int32>("year");
-            //    var result_premium = result.Get<String>("premium");
-            //    var result_interior = result.Get<String>("interior");
-            //    var result_exterior = result.Get<String>("exterior");
-            //    var result_perf = result.Get<String>("performance");
-            //    var result_safe = result.Get<String>("safety");
-            //    var result_warr = result.Get<String>("warranty");
-            //    var result_sold = result.Get<Boolean>("isSold");
-            //    var result_price = result.Get<Int32>("price");
-
-            //    listBox.Items.Add(result_make + " " + result_model + " " + result_year + " " +
-            //        result_premium + " " + result_interior + " " + result_exterior + " " +
-            //        result_perf + " " + result_safe + " " + result_warr + " " + result_sold + " " + result_price);
-            //}
 
             return carResults.ToList();
 
@@ -98,7 +80,7 @@ namespace TVTS
                     var result_make = result.Get<String>("make");
                     var result_model = result.Get<String>("model");
                     var result_year = result.Get<Int32>("year");
-                    var result_premium = result.Get<String>("premium");
+                    var result_package = result.Get<Int32>("package");
                     var result_interior = result.Get<String>("interior");
                     var result_exterior = result.Get<String>("exterior");
                     var result_perf = result.Get<String>("performance");
@@ -116,7 +98,7 @@ namespace TVTS
 
 
                     listBox.Items.Add(result_make + " " + result_model + " " + result_year + " " +
-                        result_premium + " " + result_interior + " " + result_exterior + " " +
+                        result_package + " " + result_interior + " " + result_exterior + " " +
                         result_perf + " " + result_safe + " " + result_warr + " " + sold + " " + result_price);
                 }
             }
